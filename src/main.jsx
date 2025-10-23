@@ -6,6 +6,7 @@ import './style.css'
 import './index.css'
 import App from './App.jsx'
 import Nav from './Nav.jsx'
+import Footer from './Footer.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -18,6 +19,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="/404" element={<h1>Page Not Found</h1>} />
         </Routes>
       </div>
+      <Footer />
     </BrowserRouter>
   </StrictMode>,
 )
