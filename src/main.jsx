@@ -4,9 +4,10 @@ import { BrowserRouter, Routes, Route } from 'react-router';
 
 import './style.css'
 import './index.css'
-import App from './App.jsx'
-import Nav from './Nav.jsx'
-import Footer from './Footer.jsx'
+import Home from './screens/Home.jsx'
+import About from './screens/About.jsx'
+import Nav from './components/Nav.jsx'
+import Footer from './components/Footer.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -14,7 +15,8 @@ createRoot(document.getElementById('root')).render(
       <Nav />
       <div className="pt-16">
         <Routes>
-          <Route path="/" element={<App />} />
+          <Route path="/Home" element={<Home />} />
+          <Route path="/About" element={<About />} />
           {/* Fallback route for 404 Not Found */}
           <Route path="/404" element={<h1>Page Not Found</h1>} />
         </Routes>

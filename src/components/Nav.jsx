@@ -2,7 +2,7 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
 import "./Nav.css"
-import './style.css'
+import '../style.css'
 
 const navigation = [
   { name: 'Home', href: '/Home', current: true },
