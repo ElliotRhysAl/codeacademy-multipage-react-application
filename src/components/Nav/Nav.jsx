@@ -1,12 +1,11 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 
-import "./Nav.css"
-import '../style.css'
+import '../../style.css'
 
 const navigation = [
-  { name: 'Home', href: '/Home', current: true },
-  { name: 'About', href: '/About', current: false },
+  { name: 'Home', href: '/', current: true },
+  { name: 'Terms', href: '/Terms', current: false },
   { name: 'Page 2', href: '/Page2', current: false },
   { name: 'Page 3', href: '/Page3', current: false },
 ]
