@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <>
       <Nav />
-      <div id="logo" className="mt-20 flex justify-center space-x-4">
+      <div id="logo" className="mt-20 ml-20 flex space-x-4">
         <a href="https://vite.dev" target="_blank" rel="noreferrer">
           <img src={viteLogo} className="logo vite" alt="Vite logo" />
         </a>
@@ -20,7 +20,7 @@ export default function Header() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <div className="mt-10 flex flex-col justify-center items-center">
+      <div className="mt-10 flex flex-col ml-20">
         <h1 className="text-5xl mb-4">Vite + React</h1>
         <div className="text-2xl">
           <button className="btn" onClick={() => setCount((count) => count + 1)}>
@@ -29,7 +29,7 @@ export default function Header() {
         </div>
       </div>
       {/* Add a spacer at bottom for fixed footer if desired */}
-      <div className="h-[8rem] md:h-[4rem]" />
+      <div className="h-32 md:h-16" />
     </>
   );
 }
