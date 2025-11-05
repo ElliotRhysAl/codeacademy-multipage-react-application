@@ -1,6 +1,6 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Landing from './screens/Landing/Landing.jsx'
-import Footer from './components/Sections/Footer.jsx'
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Landing from "./screens/Landing/Landing.jsx"
+import Footer from "./components/Sections/Footer.jsx"
 
 export default function App() {
   return (
