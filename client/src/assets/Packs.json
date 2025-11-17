@@ -1,0 +1,47 @@
+{
+  "standardPackage": {
+    "title": "Standard",
+    "currency": "£",
+    "price": "10",
+    "services": [
+      ["High-resolution image generation", true],
+      ["Customizable style templates", true],
+      ["Batch processing capabilities", false],
+      ["AI-driven image enhancements", false],
+      ["Seamless cloud integration", false],
+      ["Real-time collaboration tools", false]
+    ],
+    "desc": "Perfect for individuals getting started with AI image generation.",
+    "badge": null
+  },
+  "plusPackage": {
+    "title": "Plus",
+    "currency": "£",
+    "price": "19",
+    "services": [
+      ["High-resolution image generation", true],
+      ["Customizable style templates", true],
+      ["Batch processing capabilities", true],
+      ["AI-driven image enhancements", true],
+      ["Seamless cloud integration", false],
+      ["Real-time collaboration tools", false]
+    ],
+    "desc": "Ideal for professionals seeking advanced features and better performance.",
+    "badge": "New"
+  },
+  "premiumPackage": {
+    "title": "Premium",
+    "currency": "£",
+    "price": "29",
+    "services": [
+      ["High-resolution image generation", true],
+      ["Customizable style templates", true],
+      ["Batch processing capabilities", true],
+      ["AI-driven image enhancements", true],
+      ["Seamless cloud integration", true],
+      ["Real-time collaboration tools", true]
+    ],
+    "desc": "Best for businesses and teams requiring comprehensive tools and support.",
+    "badge": "Most Popular"
+  }
+}
