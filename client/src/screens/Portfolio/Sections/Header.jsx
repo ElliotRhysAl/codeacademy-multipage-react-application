@@ -4,6 +4,7 @@
 // assets
 import Nav from "../../../components/Nav/Nav.jsx";
 import TupleCard from "../../../components/Elements/TupleCard.jsx";
+import RotatingStack from "../../../components/Elements/RotatingStack.jsx";
 
 import packs from "../../../assets/Packs.json"
 const packagesArray = Object.values(packs);
@@ -30,6 +31,7 @@ export default function Header() {
       </div>
       {/* Add a spacer at bottom for fixed footer if desired */}
       <div className="h-32 md:h-16" />
+      <RotatingStack />
     </>
   );
 }
