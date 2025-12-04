@@ -2,7 +2,8 @@ import React from "react";
 
 export default function Footer() {
   return (
-      <footer className="fixed bottom-0 left-0 right-0 w-full bg-gray-800 text-gray-300 p-4 flex flex-col md:flex-row justify-between items-center md:items-start z-50 max-h-64">      <div id="left" className="flex flex-col items-center md:items-start space-y-2">
+    <footer className="fixed bottom-0 left-0 right-0 w-full bg-gray-800 text-gray-300 p-4 flex flex-col md:flex-row justify-between items-center md:items-start z-50 max-h-64 space-y-4 md:space-y-0">
+      <div id="left" className="flex flex-col items-center md:items-start space-y-2">
         <p className="text-sm">&copy; 2025 Elliot Allen. All rights reserved.</p>
         <p className="text-sm">Built with React and Tailwind CSS.</p>
         <div id="socials" className="flex space-x-4 mt-2">

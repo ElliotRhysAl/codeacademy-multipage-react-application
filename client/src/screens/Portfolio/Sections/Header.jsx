@@ -2,7 +2,7 @@
 
 
 // assets
-import Nav from "../../../components/Nav/Nav";
+import Nav from "../../../components/Nav/Nav.jsx";
 import TupleCard from "../../../components/Elements/TupleCard.jsx";
 
 import packs from "../../../assets/Packs.json"

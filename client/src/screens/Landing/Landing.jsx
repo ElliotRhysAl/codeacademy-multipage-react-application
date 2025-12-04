@@ -1,10 +1,6 @@
-import { useState } from 'react'
-
 import Header from './Sections/Header'
 
-function About() {
-  const [count, setCount] = useState(0)
-
+function Landing() {
   return (
     <>
       <Header />
@@ -12,4 +8,4 @@ function About() {
   )
 }
 
-export default About
+export default Landing
