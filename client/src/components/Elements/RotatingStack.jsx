@@ -120,7 +120,7 @@ function RotatingStack() {
   };
 
   return (
-    <div className="stack w-48 cursor-pointer" onClick={rotate}>
+    <div className="stack stack-end w-48 cursor-pointer" onClick={rotate}>
       {items.map(item => (
         <img key={item.key} src={item.src} className="rounded-box" alt="" />
       ))}
