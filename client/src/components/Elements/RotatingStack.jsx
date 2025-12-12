@@ -53,6 +53,7 @@ import qc from '../../assets/deck/queen_of_clubs.svg';
 import qd from '../../assets/deck/queen_of_diamonds.svg';
 import qh from '../../assets/deck/queen_of_hearts.svg';
 import qs from '../../assets/deck/queen_of_spades.svg';
+import back from '../../assets/deck/back/back.svg';
 
 const svgArray = [
   { src: _2c, key: '2c' },
@@ -109,13 +110,24 @@ const svgArray = [
   { src: qs, key: 'qs' }
 ];
 
+const cardBack = { src: back, key: 'back' };
+
 function RotatingStack() {
-  const [items, setItems] = useState(svgArray);
+
+  const [items, setItems] = useState(() => [
+    cardBack,
+    ...svgArray,
+  ]);
 
   const rotate = () => {
     setItems(prev => {
-      if (prev.length <= 1) return prev;
-      return [...prev.slice(1), prev[0]];
+      if (prev.length <= 1) return prev;  // Fixed threshold
+      if (prev[0].key === 'back') return prev.slice(1); // Do not rotate if top is back
+
+      return [
+        ...prev.slice(1), // remove first item
+        prev[0]           // add it to the end 
+      ];
     });
   };
 
